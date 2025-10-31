@@ -35,6 +35,7 @@ body {
 }
 
 .formcontainer input[type=text],
+.formcontainer input[type=email],
 .formcontainer select,
 .formcontainer textarea {
   width: 100%;
@@ -53,6 +54,7 @@ body {
 }
 
 .formcontainer input[type=text]:focus,
+.formcontainer input[type=email]:focus,
 .formcontainer select:focus,
 .formcontainer textarea:focus {
   outline: none;
