@@ -16,6 +16,7 @@
       <meta property="og:type" content="website">
       <!-- CSS -->
       <link rel="stylesheet" href="styles/styles.css?v=1">
+      <link rel="stylesheet" href="styles/form.css?v=1">
       <link rel="stylesheet" href="styles/footer.css?v=1">
       <link rel="stylesheet" href="styles/load.css?v=1">
       <link rel="stylesheet" href="styles/banner.css?v=1">
@@ -87,142 +88,27 @@
          <div class="nav_beige fade-in-section"> Learn • Play • Grow </div>
          <div class="nav_white fade-in-section">- Private lessons tailored to any learner! -</div>
       </div>
-      <!-- About & Carousel Section -->
-      <div class="outer-box fade-in-section">
-         <div class="inner-box-about fade-in-section">
-            <div class="inner-container-left">
-               <h2>About Us</h2>
-               <p>Welcome to Grace Laurieston Music – where music meets passion and talent is nurtured. I provide professional music lessons tailored to all ages and skill levels.</p>
-               <div class="footerBor"></div>
-               <br>
-               <div class="quick-facts">
-                  <h3>Why Choose Grace Laurieston Music?</h3>
-                  <ul>
-                     <li>
-                        <div class="feature-icon">
-                           <img src="images/graduation.svg" alt="Graduation icon">
-                        </div>
-                        <div class="feature-text">
-                           <strong>Qualified & Experienced:</strong> I hold a Bachelor's Degree with Honours in Music and have been teaching piano for over 2 and a half years, guiding students of all ages and skill levels.
-                        </div>
-                     </li>
-                     <li>
-                        <div class="feature-icon">
-                           <img src="images/music_foundation.svg" alt="Music Foundation icon">
-                        </div>
-                        <div class="feature-text">
-                           <strong>Strong Musical Foundation:</strong> I go beyond just teaching songs by focusing on music theory, sight-reading, rhythm, and proper technique to set you up for long-term success.
-                        </div>
-                     </li>
-                     <li>
-                        <div class="feature-icon">
-                           <img src="images/skill_level.svg" alt="Skill Level icon">
-                        </div>
-                        <div class="feature-text">
-                           <strong>Personalised learning:</strong> Every student is unique, so I tailor lessons to fit your goals, whether you want to play for fun, prepare for exams, or master advanced techniques.
-                        </div>
-                     </li>
-                     <li>
-                        <div class="feature-icon">
-                           <img src="images/tracking.svg" alt="Tracking icon">
-                        </div>
-                        <div class="feature-text">
-                           <strong>Supportive & Engaging Approach:</strong> My lessons are encouraging, patient, and motivating, helping you build confidence while enjoying the process.
-                        </div>
-                     </li>
-                  </ul>
-                  <!-- Call To Action Button -->
-                  <div class="call-to-action">
-                     <a href="#" class="btn-action">
-                     <img src="images/booking.svg" alt="Consultation Icon" class="icon-svg" />
-                     Book a Free Consultation</a>
-                  </div>
-               </div>
+      </head>
+      <div class="formcontainer">
+         <form action="send-email.php" method="POST">
+            <h3 class="icon-header">Contact Grace Laurieston Music</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email..." required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject..." required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
+            <div style="text-align:center;">
+               <input type="submit" value="Send Message">
             </div>
-            <div class="inner-container-right">
-               <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <img src="images/logo.png" class="d-block w-100" alt="Photo 1">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="images/band.png" class="d-block w-100" alt="Photo 2">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="images/review.png" class="d-block w-100" alt="Photo 3">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="images/review2.png" class="d-block w-100" alt="Photo 4">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="images/students.png" class="d-block w-100" alt="Photo 5">
-                     </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
-                  <i class="fas fa-chevron-left fa-2x" style="color: black;"></i>
-                  <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
-                  <i class="fas fa-chevron-right fa-2x" style="color: black;"></i>
-                  <span class="visually-hidden">Next</span>
-                  </button>
-               </div>
-            </div>
-         </div>
+         </form>
+         <p class="formnote">We’ll be in touch soon to discuss your musical goals!</p>
       </div>
-      <div class="footerBor"></div>
-      <!-- Lessons Offered Section -->
-      <div class="inner-box-lessons-offered fade-in-section">
-         <h2>Services Offered</h2>
-         <div class="lesson-cards">
-            <div class="lesson-card">
-               <div style="display: flex; align-items: center; gap: 10px; justify-content: center; margin-bottom: 10px;">
-                  <img src="images/piano.svg" alt="Piano icon" width="45" height="45">
-                  <h3> Private Piano Lessons</h3>
-               </div>
-               <center>
-                  <p>Tailored one-to-one lessons for all ages and levels, designed to build confidence, skills, and a love of music.</p>
-               </center>
-               <a href="#" class="learn-more">Learn More ></a>
-            </div>
-            <div class="lesson-card">
-               <div style="display: flex; align-items: center; gap: 10px; justify-content: center; margin-bottom: 10px;">
-                  <img src="images/ukelele.svg" alt="Ukelele icon" width="45" height="45">
-                  <h3> Group Ukelele Lessons</h3>
-               </div>
-               <center>
-                  <p>Fun and social sessions where you can learn to play the ukelele in a relaxed group setting.</p>
-               </center>
-               <a href="#" class="learn-more">Learn More ></a>
-            </div>
-            <div class="lesson-card">
-               <div style="display: flex; align-items: center; gap: 10px; justify-content: center; margin-bottom: 10px;">
-                  <img src="images/weddings.svg" alt="Weddings icon" width="45" height="45">
-                  <h3> Wedding Pianist Services</h3>
-               </div>
-               <center>
-                  <p>Live piano music to create the perfect atmosphere for your wedding ceremony, reception, or special moments.</p>
-               </center>
-               <a href="#" class="learn-more">Learn More ></a>
-            </div>
-            <div class="lesson-card">
-               <div style="display: flex; align-items: center; gap: 10px; justify-content: center; margin-bottom: 10px;">
-                  <img src="images/events.svg" alt="concert icon" width="45" height="45">
-                  <h3> Upcoming Events</h3>
-               </div>
-               <center>
-                  <p>Join us for student concerts and special performances that celebrate learning, progress, and the joy of music.</p>
-               </center>
-               <a href="#" class="learn-more">Learn More ></a>
-            </div>
-         </div>
-      </div>
-      <div class="footerBor"></div>
-      <script src="https://static.elfsight.com/platform/platform.js" async></script>
-      <div class="elfsight-app-9b2741dc-a779-468e-b9b1-a9e29211bde0 fade-in-section" data-elfsight-app-lazy></div>
       <!-- Footer -->
-      <div class="footerBor fade-in-section"></div>
-      <footer class="footer-area footer--light fade-in-section">
+      <div class="footerBor"></div>
+      <footer class="footer-area footer--light">
          <div class="footer-big">
             <div class="container">
                <div class="row">
