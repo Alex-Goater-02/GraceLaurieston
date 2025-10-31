@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #272727;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+header {
+	background-color: #0aa7d6;
+	padding: 20px;
+	border-bottom: 5px solid #757575;
+}
+
+nav {
+	background-color: #272727;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ddd;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	overflow: auto;
+	min-height: 30vh;
+	background-color: #f7f7f7;
+	max-width: 100%;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding-top: 20px;
+}
+
+.textAlign {
+	text-align: center;
+}
+
+.contactBox {
+	width: 100%;
+	max-width: 50em;
+	margin: auto;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+input,
+label,
+select,
+textarea {
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 0.5em;
+}
+
+label {
+	text-align: left;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 0.5em 1em;
+	font-size: 1em;
+}
+
+form {
+	overflow: auto;
+	clear: both;
+}
+
+.errors {
+	padding: 1em;
+	border: 1px solid red;
+	background-color: lightyellow;
+	color: red;
+	margin-bottom: 1em;
+}
+
+.errors ul {
+	margin-left: 1em;
+}
+
+input[type="checkbox"] {
+	width: auto;
+	margin-right: 10px;
+}
+
+.currentpage::before {
+	content: "[";
+}
+
+.currentpage::after {
+	content: "]";
+}
+
+.gapcontainer {
+	background-color: #f7f7f7;
+	padding: 8px;
+}
+@media screen and (min-width: 768px) {
+  nav li {
+    padding: 0.5em;
+    text-align: center;
+  }
+}
+
